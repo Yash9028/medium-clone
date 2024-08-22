@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -63,11 +63,15 @@ header .logo {
   }
 }
 main {
+  background-image: url(../images/background.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 70vw;
   min-height: 80vh;
 }
 main h1 {
   font-family: "GT Super", serif;
-  font-size: 110px;
+  font-size: calc(10vw + 10px);
   font-weight: 400;
   letter-spacing: -3px;
   line-height: 0.9;
@@ -81,9 +85,29 @@ main .container {
   gap: 40px;
 }
 
+footer {
+  padding: 20px;
+  border-top: 1px solid black;
+}
+footer nav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
 @media screen and (max-width: 900px) {
   main .btn {
     background: #1a8917;
+  }
+  footer {
+    background: black;
+    color: white;
+  }
+  footer nav {
+    justify-content: start;
+  }
+  footer .hide {
+    display: none;
   }
 }
 
