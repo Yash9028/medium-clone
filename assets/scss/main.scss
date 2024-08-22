@@ -21,6 +21,7 @@ a {
   padding: 8px 16px;
   border-radius: 20px;
   color: white;
+  border: none;
 }
 // MARK: Header
 header {
@@ -51,6 +52,28 @@ header {
 main {
   min-height: 80vh;
   h1 {
-    font-family: "GT Super", serif;
+    font: {
+      family: "GT Super", serif;
+      size: 110px;
+      weight: 400;
+    }
+
+    letter-spacing: -3px;
+    line-height: 0.9;
+  }
+  .container {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 900px) {
+  main {
+    .btn {
+      background: #1a8917;
+    }
   }
 }
